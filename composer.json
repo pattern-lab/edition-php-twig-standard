@@ -23,13 +23,12 @@
 			"PatternLab":   "core/src/"
 		}
 	},
-	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"require": {
 		"php": ">=5.3.6",
-		"pattern-lab/core": "dev-dev",
-		"pattern-lab/patternengine-twig": "dev-dev",
-		"pattern-lab/styleguidekit-twig-default": "dev-dev"
+		"pattern-lab/core": "~0.5",
+		"pattern-lab/patternengine-twig": "~0.5",
+		"pattern-lab/styleguidekit-twig-default": "~0.5"
 	},
 	"scripts": {
 		"pre-install-cmd": [
