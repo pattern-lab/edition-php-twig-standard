@@ -8,8 +8,7 @@ The Standard Edition for Twig gives developers and designers a clean base from w
 
 Pattern Lab uses [Composer](https://getcomposer.org/) to manage project dependencies. To install Composer type the following two lines in the command line:
 
-    curl -sS https://getcomposer.org/installer | php
-    mv composer.phar /usr/local/bin/composer
+    curl -sS https://getcomposer.org/installer | php -- --install-dir=bin
 
 Then close and re-open your command line terminal.
 
