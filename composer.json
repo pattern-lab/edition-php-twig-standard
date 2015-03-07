@@ -1,6 +1,6 @@
 {
 	"name":             "pattern-lab/edition-twig-standard",
-	"description":      "The Twig-based Standard Edition of Pattern Lab. Installs all Twig-related assets except for a StarterKit.",
+	"description":      "Standard Edition of Pattern Lab for Twig. Installs all Twig-related assets except for a StarterKit.",
 	"keywords":         ["pattern lab"],
 	"homepage":         "http://patternlab.io",
 	"license":          "MIT",
