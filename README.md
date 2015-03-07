@@ -29,11 +29,11 @@ The fastest way to get started with the Standard Edition for Twig is to [downloa
 
 Pattern Lab uses [Composer](https://getcomposer.org/) to manage project dependencies.
 
-#### Install Composer 
+#### 1. Install Composer 
 
 Please follow the directions for [installing Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx) on the Composer website. We recommend you [install it globally](https://getcomposer.org/doc/00-intro.md#globally).
 
-#### Install the Standard Edition for Twig
+#### 2. Install the Standard Edition for Twig
 
 Use Composer's [`create-project` command](https://getcomposer.org/doc/03-cli.md#create-project) to install the Standard Edition for Twig into a location of your choosing. In Terminal type:
 
