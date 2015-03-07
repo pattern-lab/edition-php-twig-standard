@@ -1,6 +1,6 @@
 {
 	"name":             "pattern-lab/edition-twig-standard",
-	"description":      "The Twig-based Standard Edition of Pattern Lab. Installs all Twig-related assets except for a StarterKit.",
+	"description":      "Standard Edition of Pattern Lab for Twig. Installs all Twig-related assets except for a StarterKit.",
 	"keywords":         ["pattern lab"],
 	"homepage":         "http://patternlab.io",
 	"license":          "MIT",
@@ -32,8 +32,8 @@
 		"pattern-lab/styleguidekit-twig-default": "~0.5"
 	},
 	"scripts": {
-		"pre-install-cmd": [
-			"PatternLab\\Installer::preInstallCmd"
+		"post-create-project-cmd": [
+			"PatternLab\\Installer::postCreateProjectCmd"
 		],
 		"post-package-install": [
 			"PatternLab\\Installer::postPackageInstall"
@@ -41,8 +41,19 @@
 		"post-package-update": [
 			"PatternLab\\Installer::postPackageUpdate"
 		],
+		"pre-install-cmd": [
+			"PatternLab\\Installer::preInstallCmd"
+		],
 		"pre-package-uninstall": [
 			"PatternLab\\Installer::prePackageUninstall"
 		]
+	},
+	"extra": {
+		"patternlab": {
+			"starterKitSuggestions": [
+				"pattern-lab/starterkit-twig-base",
+				"pattern-lab/starterkit-twig-demo"
+			]
+		}
 	}
 }

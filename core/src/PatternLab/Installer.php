@@ -22,6 +22,21 @@ class Installer {
 	 * Run the PL tasks when a package is installed
 	 * @param  {Object}     a script event object from composer
 	 */
+	public static function postCreateProjectCmd(Event $event) {
+		
+		// make sure pattern lab has been loaded
+		if (class_exists("\PatternLab\Config")) {
+			
+			InstallerUtil::postCreateProjectCmd($event);
+			
+		}
+		
+	}
+	
+	/**
+	 * Run the PL tasks when a package is installed
+	 * @param  {Object}     a script event object from composer
+	 */
 	public static function postPackageInstall(PackageEvent $event) {
 		
 		// make sure pattern lab has been loaded
