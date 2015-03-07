@@ -27,7 +27,6 @@
 	"prefer-stable": true,
 	"require": {
 		"php": ">=5.3.6",
-		"pattern-lab/core": "0.*",
 		"pattern-lab/patternengine-twig": "0.*",
 		"pattern-lab/styleguidekit-twig-default": "0.*"
 	},
