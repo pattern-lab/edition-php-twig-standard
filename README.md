@@ -1,46 +1,91 @@
-# Pattern Lab Standard Edition for Twig [BETA]
+# Pattern Lab Standard Edition for Twig [DEVELOPER PREVIEW]
 
-The Standard Edition for Twig gives developers and designers a clean base from which to develop Twig-based patterns.
+The Standard Edition for Twig gives developers and designers a clean and stable base from which to develop a Twig-based pattern library.
 
-## Installing the Standard Edition for Twig
+## Packaged Components
 
-### 1. Install Composer 
+The Standard Edition for Twig comes with the following components:
 
-Pattern Lab uses [Composer](https://getcomposer.org/) to manage project dependencies. To install Composer type the following two lines in the command line:
+* `pattern-lab/core`: [GitHub](https://github.com/pattern-lab/patternlab-php-core), [Packagist](https://packagist.org/packages/pattern-lab/core)
+* `pattern-lab/patternengine-twig`: [documentation](https://github.com/pattern-lab/patternengine-php-twig#twig-patternengine-for-pattern-lab-php), [GitHub](https://github.com/pattern-lab/patternengine-php-twig), [Packagist](https://packagist.org/packages/pattern-lab/patternengine-twig)
+* `pattern-lab/styleguidekit-assets-default`: [GitHub](https://github.com/pattern-lab/styleguidekit-assets-default), [Packagist](https://packagist.org/packages/pattern-lab/styleguidekit-assets-default)
+* `pattern-lab/styleguidekit-twig-default`: [GitHub](https://github.com/pattern-lab/styleguidekit-twig-default), [Packagist](https://packagist.org/packages/pattern-lab/styleguidekit-twig-default)
+* `pattern-lab/unified-asset-installer`: [GitHub](https://github.com/pattern-lab/unified-asset-installer), [Packagist](https://packagist.org/packages/pattern-lab/unified-asset-installer)
 
-    curl -sS https://getcomposer.org/installer | php -- --install-dir=bin
+## Installing
 
-Then close and re-open your command line terminal.
+There are two methods for downloading and installing the Standard Edition for Twig:
 
-### 2. Install the Standard Edition
+* [Download a pre-built project](#download-a-pre-built-package)
+* [Use Composer to create a project](#use-composer-to-create-a-project)
 
-Use Composer's `create-project` feature to install the Standard Edition into a location of your choosing. Type:
+### Download a pre-built project
+
+The fastest way to get started with the Standard Edition for Twig is to [download the pre-built version](https://github.com/pattern-lab/edition-php-twig-standard/releases) from the [releases page](https://github.com/pattern-lab/edition-php-twig-standard/releases). The pre-built project comes with the [Base StarterKit for Twig](https://github.com/pattern-lab/starterkit-twig-base) installed by default.
+
+**Please note:** Pattern Lab uses [Composer](https://getcomposer.org/) to manage project dependencies. To upgrade the Standard Edition for Twig or to install plug-ins you'll need to [install Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx). We recommend that you [install it globally](https://getcomposer.org/doc/00-intro.md#globally).
+
+### Use Composer to create a project
+
+Pattern Lab uses [Composer](https://getcomposer.org/) to manage project dependencies.
+
+#### Install Composer 
+
+Please follow the directions for [installing Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx) on the Composer website. We recommend you [install it globally](https://getcomposer.org/doc/00-intro.md#globally).
+
+#### Install the Standard Edition for Twig
+
+Use Composer's [`create-project` command](https://getcomposer.org/doc/03-cli.md#create-project) to install the Standard Edition for Twig into a location of your choosing. In Terminal type:
 
     cd install/location/
     composer create-project pattern-lab/edition-twig-standard your-project-name && cd $_
 
-This will create a directory called `your-project-name`.
+This will install the Standard Edition for Twig into a directory called `your-project-name` in `install/location/`. During the set-up process you will be asked to install an appropriate StarterKit. You will be automatically dropped into the project directory after the process is finished.
 
-### 3. Install a StarterKit
+## Updating Pattern Lab
 
-To install a near-empty StarterKit project as a starting point you can run:
+To update Pattern Lab please refer to each component's GitHub repository. The components are listed at the top of the README.
 
-    php core/console --starterkit --init
+## Helpful Commands
 
-### 4. Generate Pattern Lab
+These are some helpful commands you can use on the command line for working with Pattern Lab.
 
-To generate Pattern Lab for the first time and make sure everything was installed correctly type:
-
-    php core/console --generate
+### List all of the available commands
 
 To list all available commands type:
 
     php core/console --help
 
-### 5. Start the server to see your Pattern Lab web site
+To list the options for a particular command type:
 
-You can use PHP's built-in web server to review your Pattern Lab project in a browser. In a new terminal window type:
+    php core/console --help --[command]
+
+### Generate Pattern Lab
+
+To generate the front-end for Pattern Lab type:
+
+    php core/console --generate
+
+### Watch for changes and re-generate Pattern Lab
+
+To watch for changes and re-generate the front-end for Pattern Lab type:
+
+    php core/console --watch
+
+### Start a server to view Pattern Lab
+
+You can use PHP's built-in web server to review your Pattern Lab project in a browser. In a seperate window type:
 
     php core/console --server
 
-And then visit [http://localhost:8080](http://localhost:8080)
+Then open [http://localhost:8080](http://localhost:8080) in your browser.
+
+### Install a StarterKit
+
+To install a near-empty StarterKit as a starting point for your project type:
+
+    php core/console --starterkit --init
+
+To install a specific StarterKit from GitHub type:
+
+    php core/console --starterkit --install <starterkit-vendor/starterkit-name>
