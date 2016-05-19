@@ -24,7 +24,6 @@
 		}
 	},
 	"minimum-stability": "dev",
-	"prefer-stable": true,
 	"require": {
 		"php": ">=5.3.6",
 		"pattern-lab/core": "0.*",
@@ -32,17 +31,22 @@
 		"pattern-lab/styleguidekit-twig-default": "0.*"
 	},
 	"scripts": {
-		"post-create-project-cmd": [
-			"PatternLab\\Installer::postCreateProjectCmd"
+		"post-install-cmd": [
+			"PatternLab\\Installer::postInstallCmd"
+		],
+		"post-update-cmd": [
+			"PatternLab\\Installer::postUpdateCmd"
+		],
+		"post-root-package-install": [
+			"PatternLab\\Installer::setProjectInstall",
+			"PatternLab\\Installer::getSuggestedStarterKits",
+			"PatternLab\\Installer::getConfigOverrides"
 		],
 		"post-package-install": [
 			"PatternLab\\Installer::postPackageInstall"
 		],
 		"post-package-update": [
 			"PatternLab\\Installer::postPackageUpdate"
-		],
-		"pre-install-cmd": [
-			"PatternLab\\Installer::preInstallCmd"
 		],
 		"pre-package-uninstall": [
 			"PatternLab\\Installer::prePackageUninstall"
