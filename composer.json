@@ -30,6 +30,7 @@
 		"pattern-lab/styleguidekit-twig-default": "^2.0.0"
 	},
 	"scripts": {
+		"start": "php core/console --server  --quiet & php core/console --watch",
 		"post-install-cmd": [
 			"PatternLab\\Installer::postInstallCmd"
 		],

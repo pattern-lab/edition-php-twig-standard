@@ -50,6 +50,12 @@ To update Pattern Lab please refer to each component's GitHub repository. The co
 
 These are some helpful commands you can use on the command line for working with Pattern Lab.
 
+### One line start
+
+This will compile PL and watch for changes while running the local server:
+
+    composer run-script start
+
 ### List all of the available commands
 
 To list all available commands type:
