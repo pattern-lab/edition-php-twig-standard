@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/pattern-lab/edition-php-twig-standard.svg?branch=master)](https://travis-ci.org/pattern-lab/edition-php-twig-standard)
+
 # Pattern Lab Standard Edition for Twig [DEVELOPER PREVIEW]
 
 The Standard Edition for Twig gives developers and designers a clean and stable base from which to develop a Twig-based pattern library.
