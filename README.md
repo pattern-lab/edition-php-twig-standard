@@ -54,7 +54,7 @@ These are some helpful commands you can use on the command line for working with
 
 This will compile PL and watch for changes while running the local server:
 
-    composer start
+    composer start --timeout=0
 
 ### List all of the available commands
 
