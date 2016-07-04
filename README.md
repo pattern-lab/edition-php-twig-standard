@@ -1,4 +1,7 @@
-# Pattern Lab Standard Edition for Twig [DEVELOPER PREVIEW]
+![license](https://img.shields.io/github/license/pattern-lab/edition-php-twig-standard.svg)
+[![Packagist](https://img.shields.io/packagist/v/pattern-lab/edition-twig-standard.svg)](https://packagist.org/packages/pattern-lab/edition-mustache-webdesignday) [![Gitter](https://img.shields.io/gitter/room/pattern-lab/php.svg)](https://gitter.im/pattern-lab/php)
+
+# Pattern Lab Standard Edition for Twig
 
 The Standard Edition for Twig gives developers and designers a clean and stable base from which to develop a Twig-based pattern library.
 
@@ -10,7 +13,6 @@ The Standard Edition for Twig comes with the following components:
 * `pattern-lab/patternengine-twig`: [documentation](https://github.com/pattern-lab/patternengine-php-twig#twig-patternengine-for-pattern-lab-php), [GitHub](https://github.com/pattern-lab/patternengine-php-twig), [Packagist](https://packagist.org/packages/pattern-lab/patternengine-twig)
 * `pattern-lab/styleguidekit-assets-default`: [GitHub](https://github.com/pattern-lab/styleguidekit-assets-default), [Packagist](https://packagist.org/packages/pattern-lab/styleguidekit-assets-default)
 * `pattern-lab/styleguidekit-twig-default`: [GitHub](https://github.com/pattern-lab/styleguidekit-twig-default), [Packagist](https://packagist.org/packages/pattern-lab/styleguidekit-twig-default)
-* `pattern-lab/unified-asset-installer`: [GitHub](https://github.com/pattern-lab/unified-asset-installer), [Packagist](https://packagist.org/packages/pattern-lab/unified-asset-installer)
 
 ## Installing
 
@@ -29,7 +31,7 @@ The fastest way to get started with the Standard Edition for Twig is to [downloa
 
 Pattern Lab uses [Composer](https://getcomposer.org/) to manage project dependencies.
 
-#### 1. Install Composer 
+#### 1. Install Composer
 
 Please follow the directions for [installing Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx) on the Composer website. We recommend you [install it globally](https://getcomposer.org/doc/00-intro.md#globally).
 
