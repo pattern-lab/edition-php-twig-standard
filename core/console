@@ -20,14 +20,14 @@ if (!function_exists("json_decode")) {
 }
 
 // set-up the project base directory
-$baseDir = __DIR__."/../";
+$baseDir = __DIR__.DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR;
 
 // auto-load classes
-if (file_exists($baseDir."vendor/autoload.php")) {
-	require($baseDir."vendor/autoload.php");
+if (file_exists($baseDir."vendor".DIRECTORY_SEPARATOR."autoload.php")) {
+	require($baseDir."vendor".DIRECTORY_SEPARATOR."autoload.php");
 } else {
 	print "it doesn't appear that pattern lab has been set-up yet...\n";
-	print "please install pattern lab's dependencies by typing: php core/bin/composer.phar install...\n";
+	print "please install pattern lab's dependencies by typing: composer install...\n";
 	exit;
 }
 
